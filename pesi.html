@@ -317,7 +317,7 @@
             handle: '.drag-handle', // Classe dell'icona per trascinare
             ghostClass: 'sortable-ghost', // Classe per l'elemento fantasma
             filter: '.plan-input, .tipo-serie-select, .remove-item-btn, .add-set-row-btn', // Non iniziare il drag se si clicca su input/bottoni
-            preventOnFilter: true
+            preventOnFilter: false // MODIFICATO: Permette il click sugli input
         });
 
         new Sortable(circuitExercisesContainer, {
@@ -325,7 +325,7 @@
             handle: '.drag-handle',
             ghostClass: 'sortable-ghost',
             filter: '.circuit-peso-input, .circuit-note-input, .remove-item-btn', // Non iniziare il drag se si clicca su input/bottoni
-            preventOnFilter: true
+            preventOnFilter: false // MODIFICATO: Permette il click sugli input
         });
 
 
